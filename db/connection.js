@@ -32,8 +32,9 @@ export default class Connection {
             dotenvConfig();
 
             //Destructure variables
+            `mongodb+srv://muppasanieek:<password>@cluster0.lulsgyu.mongodb.net/`
             const { MONGO_USERNAME, MONGO_PASSWORD, MONGO_CLUSTER } = process.env;
-            //const DATABASE_URL = `mongodb+srv://${MONGO_USERNAME}:${MONGO_PASSWORD}@${MONGO_CLUSTER}.xtdufxk.mongodb.net/?retryWrites=true&w=majority`;
+            const DATABASE_URL =  `mongodb+srv://${MONGO_USERNAME}::${MONGO_PASSWORD}@${MONGO_CLUSTER}lulsgyu.mongodb.net/`;
 
             //Mongoose connect to the database.
             mongoose.connect(

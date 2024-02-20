@@ -13,6 +13,9 @@ class PageController {
     static getAccount(req, res) {
         res.sendFile(path.resolve() + "/account.html");
     }
+    static getarticles(req,res){
+        res.render("articles", {});
+    }
 }
 
 export default PageController;
